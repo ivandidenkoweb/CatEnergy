@@ -1,3 +1,7 @@
+@font-face {
+  font-family: ArialMT;
+  src: url(../../fonts/ArialMT.ttf);
+}
 html {
   box-sizing: border-box;
 }
@@ -17,6 +21,13 @@ ul {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .main-header {
   display: flex;
@@ -308,5 +319,173 @@ ul {
     width: 720px;
     background-image: url("../../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1440px) {
+  .categories {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+.categories__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  .categories__list {
+    width: 1220px;
+    justify-content: space-between;
+  }
+}
+.categories__item {
+  position: relative;
+  width: 280px;
+  margin-top: 20px;
+  padding: 26px 20px 22px 20px;
+  background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .categories__item {
+    width: 708px;
+    margin: 0 0 30px 0;
+    padding: 75px 285px 62px 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .categories__item {
+    width: 570px;
+    margin: 80px 0 0 0;
+    padding: 75px 55px 62px 52px;
+  }
+}
+.categories__image {
+  position: absolute;
+  top: 23px;
+  left: 21px;
+  display: block;
+  width: 67px;
+  height: 53px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .categories__image {
+    top: 80px;
+    left: auto;
+    right: 28px;
+    width: 268px;
+    height: 212px;
+  }
+}
+@media (min-width: 1440px) {
+  .categories__image {
+    top: 41px;
+    right: auto;
+    left: 34px;
+    width: 134px;
+    height: 106px;
+  }
+}
+.categories__image--less {
+  background-image: url("../../img/categories-less.png"), url("../../img/ellipse-mobile.png");
+}
+@media (min-width: 768px) {
+  .categories__image--less {
+    background-image: url("../../img/categories-less-tablet.png"), url("../../img/ellipse-1-tablet.png");
+  }
+}
+@media (min-width: 1440px) {
+  .categories__image--less {
+    background-image: url("../../img/categories-less-desktop.png"), url("../../img/ellipse-1-desktop.png");
+  }
+}
+.categories__image--masse {
+  background-image: url("../../img/categories-masse.png"), url("../../img/ellipse-mobile.png");
+}
+@media (min-width: 768px) {
+  .categories__image--masse {
+    background-image: url("../../img/categories-masse-tablet.png"), url("../../img/ellipse-1-tablet.png");
+  }
+}
+@media (min-width: 1440px) {
+  .categories__image--masse {
+    background-image: url("../../img/categories-masse-desktop.png"), url("../../img/ellipse-1-desktop.png");
+  }
+}
+.categories .categories__title {
+  margin-left: 92px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #111111;
+}
+@media (min-width: 768px) {
+  .categories .categories__title {
+    margin-left: 0;
+    font-size: 36px;
+  }
+}
+@media (min-width: 1440px) {
+  .categories .categories__title {
+    margin-left: 216px;
+  }
+}
+.categories .categories__description {
+  padding-bottom: 21px;
+  margin: 34px 0 20px 0;
+  border-bottom: 1px solid #dadada;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+}
+@media (min-width: 768px) {
+  .categories .categories__description {
+    margin: 26px 0 61px 0;
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .categories .categories__description {
+    margin: 71px 0 32px 0;
+  }
+}
+.categories .categories__link {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+}
+@media (min-width: 768px) {
+  .categories .categories__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.categories .categories__link::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  top: 6px;
+  display: block;
+  width: 24px;
+  height: 11px;
+  background-image: url("../../img/categories-arrow.png");
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .categories .categories__link::after {
+    top: 10px;
+    right: -49px;
   }
 }
