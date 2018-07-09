@@ -11,6 +11,13 @@ html {
 ul {
   list-style: none;
 }
+.button__link {
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .main-header {
   display: flex;
   flex-direction: row;
@@ -28,11 +35,11 @@ ul {
     padding: 24px 30px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .main-header {
     position: relative;
     width: 1219px;
-    margin: 54px auto;
+    margin: 54px auto 0 auto;
     background-color: transparent;
   }
 }
@@ -43,7 +50,7 @@ ul {
     background-image: url("../../img/logo-tablet-svg.png");
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .main-header__logo {
     width: 202px;
     height: 59px;
@@ -123,5 +130,183 @@ ul {
   }
   .main-header__link--active {
     border-bottom: 2px solid #68b738;
+  }
+}
+.main {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .main {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .main {
+    width: 1440px;
+  }
+}
+.first-screen {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .first-screen {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen {
+    width: 720px;
+  }
+}
+.first-screen__title {
+  padding: 29px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../../img/index-background-mobile.png");
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .first-screen__title {
+    width: 500px;
+    margin: 0 0 0 90px;
+    background-image: none;
+    color: #111111;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen__title {
+    margin: 0 0 0 164px;
+  }
+}
+.first-screen__main-title {
+  padding: 0;
+  margin-bottom: 19px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .first-screen__main-title {
+    padding-top: 31px;
+    margin-bottom: 33px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen__main-title {
+    padding-top: 113px;
+  }
+}
+.first-screen__sub-title {
+  margin-bottom: 167px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .first-screen__sub-title {
+    margin-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen__sub-title {
+    margin-bottom: 53px;
+  }
+}
+.first-screen__image {
+  position: absolute;
+  top: 167px;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .first-screen__image-mobile {
+    display: none;
+  }
+}
+.first-screen__image-tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .first-screen__image-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen__image-tablet {
+    display: none;
+  }
+}
+.first-screen__image-desctop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .first-screen__image-desctop {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .first-screen__image {
+    top: 259px;
+    z-index: -1;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen__image {
+    top: 29px;
+    left: 560px;
+    z-index: 0;
+  }
+}
+.first-screen__button {
+  width: 100%;
+  text-align: center;
+}
+.first-screen__link {
+  display: block;
+  width: 280px;
+  padding: 11px;
+  margin: 135px auto 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  .first-screen__link {
+    width: 245px;
+    margin: 0 0 529px 119px;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .first-screen__link {
+    margin: 0 0 188px 190px;
+  }
+}
+.second-screen {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .second-screen {
+    display: block;
+    width: 720px;
+    background-image: url("../../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
   }
 }

@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta
+	 name="viewport"
+	 content="width=device-width,initial-scale=1">
 	<title>CAT ENERGY - Главная</title>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -25,19 +28,22 @@
 		</nav>
 	</header>
 	<main class="main">
-		<section class="first-screen main__first-screen">
-			<div class="first-screen-title first-screen__title">
-				<h1 class="first-screen-title__main-title">Функциональное питание для котов</h1>
-				<h3 class="first-screen-title__sub-title">Занялся собой? Займись котом!</h3>
+		<section class="first-screen">
+			<div class="first-screen__title">
+				<h1 class="first-screen__main-title">Функциональное питание для котов</h1>
+				<h3 class="first-screen__sub-title">Занялся собой? Займись котом!</h3>
 			</div>
-			<div class="image-mobile first-screen__image">
-				<img src="#">
+			<div class="first-screen__image">
+				<img class="first-screen__image-mobile" src="img/index-can-mobile.png" alt="Продукт">
+				<img class="first-screen__image-tablet" src="img/index-can-tablet-jpg.png" alt="Продукт">
+				<img class="first-screen__image-desctop" src="img/index-can.png" alt="Продукт">
 			</div>
-			<div class="button first-screen__button">
-				<a class="button__link first-screen__link" href="#">Подобрать программу</a>
+			<div class="first-screen__button">
+				<a class="button__link first-screen__link" href="form.html">Подобрать программу</a>
 			</div>
 		</section>
-		<section class="categories main__categories">
+		<section class="second-screen"></section>
+		<section class="categories">
 			<h1 class="visually-hidden">Категории программ</h1>
 			<ul class="categories__list">
 				<li class="categories__item">
@@ -52,7 +58,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="advantages main__advantages">
+		<section class="advantages">
 			<h1 class="advantages__title">Как это работает</h1>
 			<ul class="advantages__list">
 				<li class="advantages__item">
@@ -69,7 +75,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="result main__result">
+		<section class="result">
 			<h1 class="result__title">Живой пример</h1>
 			<p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 			<div class="result-facts result__facts">
@@ -89,7 +95,7 @@
 				<h1 class="result-slider__title visually-hidden">Результаты до и после</h1>
 			</section>
 		</section>
-		<section class="contacts main__contacts">
+		<section class="contacts">
 			<h1 class="contacts__title visually-hidden">Контакты</h1>
 			<div class="contacts-address contacts__address">
 				<p class="contacts-address__text">приглашаем к сотрудничеству дилеров!</p>
