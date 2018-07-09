@@ -33,4 +33,5 @@ gulp.task("serve", ["style"], function() {
 
 	gulp.watch("less/**/*.less", ["style"]);
 	gulp.watch("*.html").on("change", browserSync.reload);
+  gulp.watch("less/**/*.less").on("change", browserSync.reload);
 }); 
