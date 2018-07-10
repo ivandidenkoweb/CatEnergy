@@ -28,38 +28,40 @@
 		</nav>
 	</header>
 	<main class="main">
-		<section class="first-screen">
-			<div class="first-screen__title">
-				<h1 class="first-screen__main-title">Функциональное питание для котов</h1>
-				<h3 class="first-screen__sub-title">Занялся собой? Займись котом!</h3>
-			</div>
-			<div class="first-screen__image">
-				<img class="first-screen__image-mobile" src="img/index-can-mobile.png" alt="Продукт">
-				<img class="first-screen__image-tablet" src="img/index-can-tablet-jpg.png" alt="Продукт">
-				<img class="first-screen__image-desctop" src="img/index-can.png" alt="Продукт">
-			</div>
-			<div class="first-screen__button">
-				<a class="button__link first-screen__link" href="form.html">Подобрать программу</a>
-			</div>
-		</section>
-		<section class="second-screen"></section>
-		<section class="categories">
-			<h1 class="visually-hidden">Категории программ</h1>
-			<ul class="categories__list">
-				<li class="categories__item">
-					<span class="categories__image categories__image--less"></span>
-					<h4 class="categories__title">Похудение</h4>
-					<p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-					<a class="categories__link">Каталог Slim</a>
-				</li>
-				<li class="categories__item">
-					<span class="categories__image categories__image--masse"></span>
-					<h4 class="categories__title">Набор массы</h4>
-					<p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-					<a class="categories__link">Каталог pro</a>
-				</li>
-			</ul>
-		</section>
+		<div class="container">
+			<section class="first-screen">
+				<div class="first-screen__title">
+					<h1 class="first-screen__main-title">Функциональное питание для котов</h1>
+					<h3 class="first-screen__sub-title">Занялся собой? Займись котом!</h3>
+				</div>
+				<div class="first-screen__image">
+					<img class="first-screen__image-mobile" src="img/index-can-mobile.png" alt="Продукт">
+					<img class="first-screen__image-tablet" src="img/index-can-tablet-jpg.png" alt="Продукт">
+					<img class="first-screen__image-desctop" src="img/index-can.png" alt="Продукт">
+				</div>
+				<div class="first-screen__button">
+					<a class="button__link first-screen__link" href="form.html">Подобрать программу</a>
+				</div>
+			</section>
+			<section class="second-screen"></section>
+			<section class="categories">
+				<h1 class="visually-hidden">Категории программ</h1>
+				<ul class="categories__list">
+					<li class="categories__item">
+						<span class="categories__image categories__image--less"></span>
+						<h4 class="categories__title">Похудение</h4>
+						<p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+						<a class="categories__link">Каталог Slim</a>
+					</li>
+					<li class="categories__item">
+						<span class="categories__image categories__image--masse"></span>
+						<h4 class="categories__title">Набор массы</h4>
+						<p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+						<a class="categories__link">Каталог pro</a>
+					</li>
+				</ul>
+			</section>
+		</div>
 		<section class="advantages">
 			<h1 class="advantages__title">Как это работает</h1>
 			<ul class="advantages__list">
@@ -90,22 +92,41 @@
 			<section class="result__info">
 				<h1 class="result__title">Живой пример</h1>
 				<p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-				<div class="result-facts result__facts">
-					<ul class="result-facts__list">
-						<li class="result-facts__item">
-							<span class="result-facts__title">5 кг</span>
-							<span class="result-facts__sub-title">снижение веса</span>
+				<div class="result__facts">
+					<ul class="result__facts-list">
+						<li class="result__facts-item">
+							<span class="result__facts-title">5 кг</span>
+							<span class="result__facts-sub-title">снижение веса</span>
 						</li>
-						<li class="result-facts__item">
-							<span class="result-facts__title">60 дней</span>
-							<span class="result-facts__sub-title">затрачено времени</span>
+						<li class="result__facts-item">
+							<span class="result__facts-title">60 дней</span>
+							<span class="result__facts-sub-title">затрачено времени</span>
 						</li>
 					</ul>
-					<p class="result-facts__text">Затраты на питание: 15 000 руб.</p>
+					<p class="result__facts-text"><span>Затраты на питание:</span> 15 000 руб.</p>
 				</div>
 			</section>
-			<section class="result-slider result__slider">
-				<h1 class="result-slider__title visually-hidden">Результаты до и после</h1>
+			<section class="result__slider">
+				<h1 class="result__slider-title visually-hidden">Результаты до и после</h1>
+				<div class="result__slider-cats result__slider-cats--mobile">
+					<img class="result__slider-before" src="img/before-mobile.png" alt="Было">
+					<img class="result__slider-after" src="img/after-mobile.png" alt="Стало">
+				</div>
+				<div class="result__slider-cats result__slider-cats--desktop">
+					<img class="result__slider-before" src="img/before-desktop.png" alt="Было">
+					<img class="result__slider-after" src="img/after-desktop.png" alt="Стало">
+				</div>
+				<div class="result__slider-control">
+					<span class="result__slider-control-text result__slider-control-text--before">Было</span>
+					<input class="result__slider-input" id="result__slider-input" type="checkbox">
+					<label class="result__slider-input-label" for="result__slider-input"></label>
+					<div class="result__slider-scale">
+						<div class="result__slider-toggle">
+							<div class="result__slider-dote"></div>
+						</div>
+					</div>
+					<span class="result__slider-control-text result__slider-control-text--after">Стало</span>
+				</div>
 			</section>
 		</section>
 		<section class="contacts">
