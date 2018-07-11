@@ -685,6 +685,7 @@ ul {
 @media (min-width: 1440px) {
   .result__info {
     width: 450px;
+    margin: 0 139px 32px 0;
   }
 }
 .result__title {
@@ -886,6 +887,7 @@ ul {
 @media (min-width: 768px) {
   .result__slider-cats--desktop {
     display: flex;
+    width: 700px;
   }
 }
 @media (min-width: 768px) {
@@ -915,7 +917,7 @@ ul {
 }
 @media (min-width: 1440px) {
   .result__slider-control {
-    margin: 20px 0 75px 0;
+    margin: 20px 0 68px 0;
   }
 }
 .result__slider-control-text {
@@ -1025,4 +1027,102 @@ ul {
     border-radius: 50%;
     background-color: #68b738;
   }
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  .contacts__container {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+.contacts__address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 0 25px 0;
+}
+@media (min-width: 768px) {
+  .contacts__address {
+    justify-content: space-between;
+    width: 708px;
+    padding: 69px 0 62px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts__address {
+    position: absolute;
+    z-index: 1;
+    left: 110px;
+    top: 95px;
+    width: 570px;
+    padding: 64px 0 57px 0;
+    background-color: #ffffff;
+  }
+}
+.contacts__address-text {
+  width: 160px;
+  padding-left: 19px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+@media (min-width: 768px) {
+  .contacts__address-text {
+    padding-left: 42px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts__address-text {
+    width: 180px;
+    padding-left: 0;
+    margin-left: 76px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+.contacts__address-address {
+  width: 160px;
+  padding-right: 25px;
+  font-family: "ArialMT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  color: #444444;
+}
+@media (min-width: 768px) {
+  .contacts__address-address {
+    padding-right: 41px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts__address-address {
+    width: 180px;
+    padding-right: 0;
+    margin-right: 90px;
+    font-size: 16px;
+  }
+  .contacts__address-address span {
+    line-height: 60px;
+  }
+}
+.contacts__map {
+  width: 100%;
+  min-height: 400px;
+}
+.gm-style-mtc,
+.gmnoprint,
+.gm-svpc {
+  display: none;
 }

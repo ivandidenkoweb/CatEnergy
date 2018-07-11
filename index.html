@@ -131,11 +131,15 @@
 		</section>
 		<section class="contacts">
 			<h1 class="contacts__title visually-hidden">Контакты</h1>
-			<div class="contacts-address contacts__address">
-				<p class="contacts-address__text">приглашаем к сотрудничеству дилеров!</p>
-				<address class="contacts-address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+			<div class="contacts__container">
+				<div class="contacts__address">
+					<p class="contacts__address-text">Приглашаем к сотрудничеству дилеров!</p>
+					<address class="contacts__address-address">ул. Большая Конюшенная, д. 19/8 
+						<span>Санкт-Петербург</span></address>
+				</div>
 			</div>
-			<div class="contacts__map"></div>
+			<div class="contacts__map" id="map">
+			</div>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -158,5 +162,10 @@
 			<img class="copyright__logo" src="#" alt="HTMLAcademy"></img>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="js/google-map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPcJq68lbKkgdOmnkevWBbtghejs8qv-U&callback=initMap"></script>
 </body>
 </html>
