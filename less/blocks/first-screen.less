@@ -15,8 +15,12 @@
 		font-family: @Oswald;
 		color: @white;
 		text-align: center;
-		background-image: url("../../img/index-background-mobile.png");
+		background-image: url("../img/index-background-mobile.png");
 		background-repeat: no-repeat;
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/index-background-mobile@2x.png");
+			background-size: cover;
+		}
 		@media (min-width: 768px) {
 			width: 500px;
 			margin: 0 0 0 90px;
@@ -64,26 +68,6 @@
 		top: 167px;
 		width: 100%;
 		text-align: center;
-		&-mobile {
-			@media (min-width: 768px) {
-				display: none;
-			}
-		}
-		&-tablet {
-			display: none;
-			@media (min-width: 768px) {
-				display: block;
-			}
-			@media (min-width: 1440px) {
-				display: none;
-			}
-		}
-		&-desctop {
-			display: none;
-			@media (min-width: 1440px) {
-				display: block;
-			}
-		}
 		@media (min-width: 768px) {
 			top: 259px;
 			z-index: -1;

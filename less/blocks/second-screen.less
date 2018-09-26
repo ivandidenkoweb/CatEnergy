@@ -3,7 +3,11 @@
 	@media (min-width: 1440px) {
 		display: block;
 		width: 720px;
-		background-image: url("../../img/index-background-desktop.jpg");
+		background-image: url("../img/index-background-desktop.jpg");
 		background-repeat: no-repeat;
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/index-background-desktop@2x.jpg");
+			background-size: contain;
+		}
 	}
 }
