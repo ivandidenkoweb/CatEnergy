@@ -388,7 +388,7 @@ ul {
     background-image: url("../img/categories-masse-desktop.svg"), url("../img/ellipse-desktop.svg");
   }
 }
-.categories .categories__title {
+.categories__title {
   margin-left: 92px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -398,17 +398,17 @@ ul {
   color: #111111;
 }
 @media (min-width: 768px) {
-  .categories .categories__title {
+  .categories__title {
     margin-left: 0;
     font-size: 36px;
   }
 }
 @media (min-width: 1440px) {
-  .categories .categories__title {
+  .categories__title {
     margin-left: 216px;
   }
 }
-.categories .categories__description {
+.categories__description {
   padding-bottom: 21px;
   margin: 34px 0 20px 0;
   border-bottom: 1px solid #dadada;
@@ -419,7 +419,7 @@ ul {
   color: #444444;
 }
 @media (min-width: 768px) {
-  .categories .categories__description {
+  .categories__description {
     margin: 26px 0 61px 0;
     border-bottom: none;
     font-size: 16px;
@@ -427,11 +427,11 @@ ul {
   }
 }
 @media (min-width: 1440px) {
-  .categories .categories__description {
+  .categories__description {
     margin: 71px 0 32px 0;
   }
 }
-.categories .categories__link {
+.categories__link {
   position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -441,26 +441,20 @@ ul {
   color: #111111;
 }
 @media (min-width: 768px) {
-  .categories .categories__link {
+  .categories__link {
     font-size: 20px;
     line-height: 20px;
   }
 }
-.categories .categories__link::after {
-  content: "";
-  position: absolute;
-  right: -36px;
-  top: 6px;
-  display: block;
-  width: 24px;
-  height: 11px;
-  background-image: url("../img/categories-arrow.svg");
-  background-repeat: no-repeat;
+.categories__arrow {
+  position: relative;
+  right: -10px;
+  top: -2px;
 }
 @media (min-width: 768px) {
-  .categories .categories__link::after {
-    top: 10px;
-    right: -49px;
+  .categories__arrow {
+    right: -23px;
+    top: -3px;
   }
 }
 .advantages {
@@ -540,6 +534,7 @@ ul {
   left: 0;
   width: 60px;
   height: 60px;
+  background-image: url("../img/green-back-mobile.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -547,38 +542,51 @@ ul {
   .advantages__image {
     width: 80px;
     height: 80px;
+    background-image: url("../img/green-back-tablet.svg");
   }
 }
-.advantages__image--nutrition {
-  background-image: url("../img/advantage-nutrition.svg"), url("../img/green-back-mobile.svg");
+.advantages__image-nutrition {
+  position: relative;
+  top: 16px;
+  left: 17px;
 }
 @media (min-width: 768px) {
-  .advantages__image--nutrition {
-    background-image: url("../img/advantage-nutrition.svg"), url("../img/green-back-tablet.svg");
+  .advantages__image-nutrition {
+    top: 26px;
+    left: 27px;
   }
 }
-.advantages__image--powder {
-  background-image: url("../img/advantage-powder.svg"), url("../img/green-back-mobile.svg");
+.advantages__image-powder {
+  position: relative;
+  top: 13px;
+  left: 15px;
 }
 @media (min-width: 768px) {
-  .advantages__image--powder {
-    background-image: url("../img/advantage-powder.svg"), url("../img/green-back-tablet.svg");
+  .advantages__image-powder {
+    top: 24px;
+    left: 25px;
   }
 }
-.advantages__image--functional {
-  background-image: url("../img/advantage-functional.svg"), url("../img/green-back-mobile.svg");
+.advantages__image-functional {
+  position: relative;
+  top: 15px;
+  left: 18px;
 }
 @media (min-width: 768px) {
-  .advantages__image--functional {
-    background-image: url("../img/advantage-functional.svg"), url("../img/green-back-tablet.svg");
+  .advantages__image-functional {
+    top: 25px;
+    left: 29px;
   }
 }
-.advantages__image--time {
-  background-image: url("../img/advantage-time.svg"), url("../img/green-back-mobile.svg");
+.advantages__image-time {
+  position: relative;
+  top: 15px;
+  left: 17px;
 }
 @media (min-width: 768px) {
-  .advantages__image--time {
-    background-image: url("../img/advantage-time.svg"), url("../img/green-back-tablet.svg");
+  .advantages__image-time {
+    top: 25px;
+    left: 27px;
   }
 }
 .advantages__bg-text {

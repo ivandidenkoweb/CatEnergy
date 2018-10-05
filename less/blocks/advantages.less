@@ -60,34 +60,48 @@
 		left: 0;
 		width: 60px;
 		height: 60px;
+		background-image: url("../img/green-back-mobile.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		@media (min-width: 768px) {
 			width: 80px;
 			height: 80px;
+			background-image: url("../img/green-back-tablet.svg");
 		}
-		&--nutrition {
-			background-image: url("../img/advantage-nutrition.svg"), url("../img/green-back-mobile.svg");
+		&-nutrition {
+			position: relative;
+			top: 16px;
+			left: 17px;
 			@media (min-width: 768px) {
-				background-image: url("../img/advantage-nutrition.svg"), url("../img/green-back-tablet.svg");
+				top: 26px;
+				left: 27px;
 			}
 		}
-		&--powder {
-			background-image: url("../img/advantage-powder.svg"), url("../img/green-back-mobile.svg");
+		&-powder {
+			position: relative;
+			top: 13px;
+			left: 15px;
 			@media (min-width: 768px) {
-				background-image: url("../img/advantage-powder.svg"), url("../img/green-back-tablet.svg");
+				top: 24px;
+				left: 25px;
 			}
 		}
-		&--functional {
-			background-image: url("../img/advantage-functional.svg"), url("../img/green-back-mobile.svg");
+		&-functional {
+			position: relative;
+			top: 15px;
+			left: 18px;
 			@media (min-width: 768px) {
-				background-image: url("../img/advantage-functional.svg"), url("../img/green-back-tablet.svg");
+				top: 25px;
+				left: 29px;
 			}
 		}
-		&--time {
-			background-image: url("../img/advantage-time.svg"), url("../img/green-back-mobile.svg");
+		&-time {
+			position: relative;
+			top: 15px;
+			left: 17px;
 			@media (min-width: 768px) {
-				background-image: url("../img/advantage-time.svg"), url("../img/green-back-tablet.svg");
+				top: 25px;
+				left: 27px;
 			}
 		}
 	}
