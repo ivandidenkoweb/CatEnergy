@@ -1,8 +1,12 @@
 .second-screen {
 	display: none;
 	@media (min-width: 1440px) {
+		position: relative;
+		top: -165px;
+		z-index: -1;
 		display: block;
 		width: 720px;
+		height: 696px;
 		background-image: url("../img/index-background-desktop.jpg");
 		background-repeat: no-repeat;
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

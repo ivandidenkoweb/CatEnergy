@@ -8,6 +8,7 @@
 		flex-direction: column;
 	}
 	@media (min-width: 1440px) {
+		flex-direction: row;
 		width: 720px
 	}
 	&__title {
@@ -44,9 +45,6 @@
 			font-size: 60px;
 			line-height: 60px;
 		}
-		@media (min-width: 1440px) {
-			padding-top: 113px;
-		}
 	}
 	&__sub-title {
 		margin-bottom: 167px;
@@ -60,7 +58,7 @@
 			line-height: 20px;
 		}
 		@media (min-width: 1440px) {
-			margin-bottom: 53px;
+			margin-bottom: 0px;
 		}
 	}
 	&__image {
@@ -81,6 +79,9 @@
 	&__button {
 		width: 100%;
 		text-align: center;
+		@media (min-width: 1440px) {
+			margin: -193px 0 0 29px;
+		}
 	}
 	&__link {
 		display: block;
@@ -98,7 +99,7 @@
 			line-height: 20px;
 		}
 		@media (min-width: 1440px) {
-			margin: 0 0 188px 190px;
+			margin: 0 0 0 190px;
 		}
 	}
 }

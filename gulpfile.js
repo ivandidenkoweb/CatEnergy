@@ -78,17 +78,20 @@ gulp.task("copy", function () {
 });
 
 gulp.task("clean", function() {
-  return del("build");
+  return del("build/**");
 });
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/"
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html", ["html"]);
-    // .on("change", server.reload);
+  gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("build", function(done){

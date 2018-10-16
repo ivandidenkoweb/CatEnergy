@@ -18,9 +18,23 @@
 		margin: 54px auto 0 auto;
 		background-color: transparent;
 	}
-	&__logo-text {
-		@media (min-width: 768px) {
-			display: none;
+	&__logo {
+		&:hover {
+			opacity: 0.8;
+		}
+		&:active {
+			opacity: 0.6;
+		}
+		&-text {
+			&:hover {
+				opacity: 0.8;
+			}
+			&:active {
+				opacity: 0.6;
+			}
+			@media (min-width: 768px) {
+				display: none;
+			}
 		}
 	}
 	&__button {
@@ -68,6 +82,12 @@
 		line-height: 20px;
 		text-transform: uppercase;
 		text-decoration: none;
+		&:hover {
+			opacity: 0.6;
+		}
+		&:active {
+			opacity: 0.3;
+		}
 		@media (min-width: 768px) {
 			width: auto;
 			padding: 12px 0;
@@ -77,6 +97,12 @@
 			color: @lightblack;
 			&--active {
 				border-bottom: 2px solid @green;
+			}
+		}
+		@media (min-width: 1440px) {
+			color: @white;
+			&--active {
+				border-bottom: 2px solid @white;
 			}
 		}
 	}
