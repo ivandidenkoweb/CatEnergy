@@ -83,11 +83,11 @@ gulp.task("clean", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
+    // notify: false,
+    // open: true,
+    // cors: true,
+    // ui: false
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);

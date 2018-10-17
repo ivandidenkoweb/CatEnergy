@@ -42,14 +42,14 @@
 		width: 18px;
 		height: 18px;
 		background-color: @black;
-		&:hover + .main-header__mobile-menu {
+		&:hover + .main-header__menu {
 			display: block;
 		}
 		@media (min-width: 768px) {
 			display: none;
 		}
 	}
-	&__mobile-menu {
+	&__menu {
 		display: none;
 		width: 320px;
 		@media (min-width: 768px) {
@@ -84,6 +84,7 @@
 		text-decoration: none;
 		&:hover {
 			opacity: 0.6;
+			cursor: pointer;
 		}
 		&:active {
 			opacity: 0.3;
@@ -95,7 +96,7 @@
 			font-weight: 400;
 			line-height: 25px;
 			color: @lightblack;
-			&--active {
+			&--active, &--catalog--active {
 				border-bottom: 2px solid @green;
 			}
 		}
@@ -103,6 +104,9 @@
 			color: @white;
 			&--active {
 				border-bottom: 2px solid @white;
+			}
+			&--catalog {
+				color: @lightblack;
 			}
 		}
 	}
