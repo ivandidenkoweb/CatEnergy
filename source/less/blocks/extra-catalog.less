@@ -1,8 +1,36 @@
 .extra-catalog {
 	&__title {
-		text-align: center;
+		position: relative;
+		margin: 31px 0px 31px 19px;
+		padding-right: 24px;
+		font-family: @Oswald;
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 400;
+		text-align: left;
+		color: @black;
+		background-color: @white;
 		@media (min-width: 768px) {
 			width: 500px;
+			margin: -69px 0 75px 67px;
+			padding: 0 40px;
+			font-size: 36px;
+			line-height: 36px;
+		}
+		@media (min-width: 1440px) {
+			margin-left: -40px;
+			width: auto;
+		}
+		&::after {
+			position: absolute;
+			top: 50%;
+			left: -500%;
+			z-index: -1;
+			content: "";
+			display: block;
+			width: 1000%;
+			height: 3px;
+			background-color: @green;
 		}
 	}
 	.container {
@@ -21,7 +49,6 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 			width: 708px;
-			padding: 27px 37px;
 		}
 		@media (min-width: 1440px) {
 			flex-direction: column;
@@ -32,26 +59,63 @@
 	}
 	&__item {
 		width: 280px;
+		border-top: 1px solid #cdcdcd;
+		&:last-child {
+			border-bottom: 1px solid #cdcdcd;
+		}
 		@media (min-width: 768px) {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			flex-wrap: wrap;
+			align-items: baseline;
 			width: 708px;
+			margin-top: -1px;
+			border: 1px solid #cdcdcd;
 		}
 		@media (min-width: 1440px) {
 			width: 100%;
+			justify-content: space-between;
+			border-bottom: none;
+			border-right: none;
+			border-left: none;
 		}
 	}
 	&__main-text {
+		margin: 14px 0;
+		font-family: @Oswald;
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 400;
+		color: @lightblack;
+		text-transform: uppercase;
 		@media (min-width: 768px) {
 			width: 200px;
+			margin: 28px 0 28px 40px;
+			font-size: 20px;
+			line-height: 20px;
+		}
+		@media (min-width: 1440px) {
+			margin-left: 0;
 		}
 	}
 	&__table {
 		width: 100%;
+		margin-bottom: 14px;
+		font-family: @Arial;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 400;
+		color: @darkgrey;
 		@media (min-width: 768px) {
 			width: auto;
+			margin-right: 38px;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		@media (min-width: 1440px) {
+			width: 284px;
+			margin: 0;
 		}
 	}
 	&__price {
@@ -59,25 +123,79 @@
 	}
 	&__link {
 		width: 100%;
+		margin-bottom: 17px;
+		padding: 11px;
+		border: none;
+		font-size: 16px;
+		line-height: 20px;
+		cursor: pointer;
 		@media (min-width: 768px) {
 			width: 633px;
-		}
-		@media (min-width: 1440px) {
-			width: 245px;
-		}
-	}
-	&__gift {
-		width: 280px;
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		@media (min-width: 768px) {
-			width: 708px;
+			margin: 0 auto 27px auto;
 		}
 		@media (min-width: 1440px) {
 			width: 245px;
 			margin: 0;
+		}
+	}
+	&__gift {
+		width: 280px;
+		margin: 56px auto 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url("../img/gift-photo-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/gift-photo-mobile@2x.jpg");
+		}
+		@media (min-width: 768px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 708px;
+			margin-top: 69px;
+			background-image: url("../img/gift-photo-tablet.jpg");
+			@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+				background-image: url("../img/gift-photo-tablet@2x.jpg");
+			}
+		}
+		@media (min-width: 1440px) {
+			flex-direction: column;
+			width: 245px;
+			margin: 0 0 86px 0;
+			background-image: url("../img/gift-photo-desktop.jpg");
+			@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+				background-image: url("../img/gift-photo-desktop@2x.jpg");
+			}
+		}
+		&-image {
+			margin: 62px;
+			@media (min-width: 768px) {
+				margin: 65px 0 75px 91px;
+			}
+			@media (min-width: 1440px) {
+				margin: 65px 95px;
+			}
+		}
+		&-title {
+			margin-bottom: 41px;
+			font-family: @Arial;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 400;
+			color: @white;
+			text-align: center;
+			@media (min-width: 768px) {
+				margin: 75px 125px 69px 0;
+				text-align: left;
+			}
+			@media (min-width: 1440px) {
+				width: 100%;
+				margin: 0 43px 43px 43px;
+				text-align: center;
+			}
 		}
 	}
 }
