@@ -35,12 +35,12 @@
     "run-sequence": "^2.2.1"
   },
   "postcss": {
-      "plugins": {
-        "autoprefixer": {
-          "browserslist": [
-              "last 3 version"
-            ]
-        }
+    "plugins": {
+      "autoprefixer": {
+        "browserslist": [
+          "last 3 version"
+        ]
       }
     }
+  }
 }
