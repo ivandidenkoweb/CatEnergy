@@ -96,8 +96,17 @@
 			font-weight: 400;
 			line-height: 25px;
 			color: @lightblack;
-			&--active, &--catalog--active {
+			&--active, 
+			&--catalog--active,
+			&--form--active {
 				border-bottom: 2px solid @green;
+				&:hover {
+					opacity: 1;
+					cursor: auto;
+				}
+				&:active {
+					opacity: 1;
+				}
 			}
 		}
 		@media (min-width: 1440px) {
@@ -105,7 +114,8 @@
 			&--active {
 				border-bottom: 2px solid @white;
 			}
-			&--catalog {
+			&--catalog,
+			&--form {
 				color: @lightblack;
 			}
 		}

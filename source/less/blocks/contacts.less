@@ -3,13 +3,6 @@
 	flex-direction: column;
 	justify-content: center;
 	&__container {
-		@media (min-width: 1440px) {
-			position: relative;
-			width: 1220px;
-			margin: 0 auto;
-		}
-	}
-	&__address {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -30,6 +23,17 @@
 			width: 570px;
 			padding: 64px 0 57px 0;
 			background-color: @white;
+		}
+	}
+	&__address {
+		@media (min-width: 1440px) {
+			position: relative;
+			width: 1220px;
+			margin: 0 auto;
+		}
+		&--catalog,
+		&--form {
+			background-color: @darkwhite;
 		}
 		&-text {
 			width: 160px;
@@ -61,16 +65,18 @@
 			line-height: 20px;
 			color: @darkgrey;
 				@media (min-width: 768px) {
+					width: 200px;
 					padding-right: 41px;
+					span {
+						display: inline-block;
+						margin-top: 20px;
+					}
 				}
 				@media (min-width: 1440px) {
 					width: 180px;
 					padding-right: 0;
 					margin-right: 90px;
 					font-size: 16px;
-					span {
-						line-height: 60px;
-					}
 				}
 			}
 		}
