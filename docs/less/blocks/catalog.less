@@ -1,0 +1,220 @@
+.catalog {
+	width: 280px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		width: 708px;
+	}
+	@media (min-width: 1440px) {
+		width: 1220px;
+	}
+	&__title {
+		width: 100%;
+		padding: 19px 0 22px 0;
+		text-align: center;
+		font-family: @Oswald;
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 60px;
+		color: @black;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		@media (min-width: 768px) {
+			font-size: 60px;
+			padding: 73px 0 73px 0;
+			border: none;
+		}
+		@media (min-width: 1440px) {
+			padding: 83px 0 75px 0;
+			text-align: left;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			margin-top: 82px;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+	}
+	&__item {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #e6e6e6;
+		padding-bottom: 24px;
+		@media (min-width: 768px) {
+			position: relative;
+			width: 324px;
+			margin-bottom: 140px;
+			padding-bottom: 40px;
+			border-bottom: none;
+			flex-direction: column;
+			align-items: center;
+			background-color: @darkwhite;
+		}
+		@media (min-width: 1440px) {
+			width: 245px;
+			margin-bottom: 142px;
+		}
+		&-image {
+			@media (min-width: 768px) {
+				position: absolute;
+				bottom: 305px;
+			}
+		}
+		&-description {
+			@media (min-width: 768px) {
+				margin-top: 165px;
+			}
+		}
+		&-title {
+			padding: 23px 0 16px 0;
+			font-family: @Oswald;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: @black;
+			@media (min-width: 768px) {
+				padding: 0;
+				margin-bottom: 28px;
+				font-size: 20px;
+				text-align: center;
+			}
+		}
+		&-table {
+			width: 140px;
+			font-family: @Arial;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+			color: @darkgrey;
+			@media (min-width: 768px) {
+				width: 249px;
+				margin-bottom: 33px;
+				font-size: 16px;
+				tr {
+					display: flex;
+					justify-content: space-between;
+					padding-bottom: 6px;
+					margin-bottom: 6px;
+					border-bottom: 1px solid #cdcdcd;
+				}
+			}
+			@media (min-width: 1440px) {
+				width: 169px;
+			}
+			&-right {
+				text-align: right;
+			}
+		}
+		&-link {
+			width: 100%;
+			padding: 11px;
+			border: none;
+			font-size: 16px;
+			line-height: 20px;
+			cursor: pointer;
+			@media (min-width: 768px) {
+				width: 249px;
+			}
+			@media (min-width: 1440px) {
+				width: 169px;
+			}
+		}
+		&-else {
+			flex-direction: column;
+			align-items: center;
+			padding-top: 27px;
+			@media (min-width: 768px) {
+				padding-top: 55px;
+				border: 1px solid #e6e6e6;
+				background-color: transparent;
+			}
+			&-link-plus {
+				position: relative;
+				width: 30px;
+				height: 30px;
+				margin-bottom: 24px;
+				border: none;
+				background-color: transparent;
+				cursor: pointer;
+				@media (min-width: 768px) {
+					width: 60px;
+					height: 60px;
+					margin-bottom: 51px;
+				}
+				&:before, &:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 13px;
+					left: 0;
+					width: 30px;
+					height: 2px;
+					background-color: #d3d3d3;
+					@media (min-width: 768px) {
+						width: 60px;
+						top: 43px;
+					}
+				}
+				&:after {
+					transform: rotate(90deg);
+				}
+			}
+			&-title {
+				margin-bottom: 9px;
+				font-family: @Oswald;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 20px;
+				color: @black;
+				text-transform: uppercase;
+				@media (min-width: 768px) {
+					width: 135px;
+					margin-bottom: 31px;
+					font-size: 20px;
+					text-align: center;
+				}
+			}
+			&-sub-title {
+				margin-bottom: 20px;
+				font-family: @Arial;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 16px;
+				color: @darkgrey;
+				@media (min-width: 768px) {
+					width: 170px;
+					margin-bottom: 87px;
+					font-size: 16px;
+					text-align: center;
+				}
+			}
+			&-link {
+				width: 100%;
+				padding: 10px;
+				border: none;
+				font-family: @Oswald;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 20px;
+				text-transform: uppercase;
+				color: @darkgrey;
+				background-color: @darkwhite;
+				cursor: pointer;
+				@media (min-width: 768px) {
+					width: 249px;
+					padding: 11px;
+				}
+				@media (min-width: 1440px) {
+					width: 169px;
+				}
+			}
+		}
+	}
+}

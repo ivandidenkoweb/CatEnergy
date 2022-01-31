@@ -1,0 +1,46 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.button__link {
+	background-color: @green;
+	font-family: @Oswald;
+	color: @white;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		background-color: #5eaa2f;
+	}
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

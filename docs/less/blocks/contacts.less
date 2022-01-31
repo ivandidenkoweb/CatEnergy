@@ -1,0 +1,87 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 320px;
+		margin: 0 auto;
+		padding: 30px 0 25px 0;
+		@media (min-width: 768px) {
+			justify-content: space-between;
+			width: 708px;
+			padding: 69px 0 62px 0;
+		}
+		@media (min-width: 1440px) {
+			position: absolute;
+			z-index: 1;
+			left: 110px;
+			top: 95px;
+			width: 570px;
+			padding: 64px 0 57px 0;
+			background-color: @white;
+		}
+	}
+	&__address {
+		@media (min-width: 1440px) {
+			position: relative;
+			width: 1220px;
+			margin: 0 auto;
+		}
+		&--catalog,
+		&--form {
+			background-color: @darkwhite;
+		}
+		&-text {
+			width: 160px;
+			padding-left: 19px;
+			font-family: @Oswald;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: @black;
+			@media (min-width: 768px) {
+				padding-left: 42px;
+			}
+			@media (min-width: 1440px) {
+				width: 180px;
+				padding-left: 0;
+				margin-left: 76px;
+				font-size: 20px;
+				line-height: 25px;
+			}
+		}
+		&-address {
+			width: 160px;
+			padding-right: 25px;
+			font-family: @Arial;
+			font-size: 14px;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 20px;
+			color: @darkgrey;
+				@media (min-width: 768px) {
+					width: 200px;
+					padding-right: 41px;
+					span {
+						display: inline-block;
+						margin-top: 20px;
+					}
+				}
+				@media (min-width: 1440px) {
+					width: 180px;
+					padding-right: 0;
+					margin-right: 90px;
+					font-size: 16px;
+				}
+			}
+		}
+	&__map {
+		width: 100%;
+		min-height: 400px;
+	}
+}

@@ -1,0 +1,123 @@
+.main-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	padding: 11px 20px 16px 20px;
+	width: 320px;
+	background-color: @white;
+	@media (min-width: 768px) {
+		width: 768px;
+		padding: 24px 30px;
+	}
+	@media (min-width: 1440px) {
+		position: relative;
+		width: 1219px;
+		margin: 54px auto 0 auto;
+		background-color: transparent;
+	}
+	&__logo {
+		&:hover {
+			opacity: 0.8;
+		}
+		&:active {
+			opacity: 0.6;
+		}
+		&-text {
+			&:hover {
+				opacity: 0.8;
+			}
+			&:active {
+				opacity: 0.6;
+			}
+			@media (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
+	&__button {
+		display: block;
+		width: 18px;
+		height: 18px;
+		background-color: @black;
+		&:hover + .main-header__menu {
+			display: block;
+		}
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+	&__menu {
+		display: none;
+		width: 320px;
+		@media (min-width: 768px) {
+			display: block;
+			width: auto;
+		}
+	}
+	&__list {
+		display: block;
+		width: 100%;
+		text-align: center;
+		@media (min-width: 768px) {
+			width: auto;			
+		}
+	}
+	&__item {
+		@media (min-width: 768px) {
+			display: inline-block;
+			margin-left: 36px;
+		}
+	}
+	&__link {
+		display: block;
+		width: 100%;
+		padding: 24px;
+		font-family: @Oswald;
+		font-size: 20px;
+		color: @black;
+		font-weight: 500;
+		line-height: 20px;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.6;
+			cursor: pointer;
+		}
+		&:active {
+			opacity: 0.3;
+		}
+		@media (min-width: 768px) {
+			width: auto;
+			padding: 12px 0;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			color: @lightblack;
+			&--active, 
+			&--catalog--active,
+			&--form--active {
+				border-bottom: 2px solid @green;
+				&:hover {
+					opacity: 1;
+					cursor: auto;
+				}
+				&:active {
+					opacity: 1;
+				}
+			}
+		}
+		@media (min-width: 1440px) {
+			color: @white;
+			&--active {
+				border-bottom: 2px solid @white;
+			}
+			&--catalog,
+			&--form {
+				color: @lightblack;
+			}
+		}
+	}
+}
